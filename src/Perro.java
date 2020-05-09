@@ -11,6 +11,10 @@ private String Trucos;
 		Trucos = trucos;
 	}
 	
+	public String Ficha() {
+		return this.DatosAnimal() + "Trucos : " + this.getTrucos();
+	}
+	
 	public String Sonido() {
 		return "- Guauuu ..";
 	}

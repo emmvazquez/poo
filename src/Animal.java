@@ -22,6 +22,11 @@ private String Raza;
 		Raza = raza;
 	}
 
+	public String DatosAnimal() {
+		return "Nombre : " + this.getNombre() + '\n' +
+				"Color : " + this.getColor() + '\n' +
+				"Raza : " + this.getRaza() + '\n' ;
+	}
 
 
 	public String getNombre() {

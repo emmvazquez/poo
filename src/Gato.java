@@ -15,6 +15,9 @@ private int Vidas;
 		return "- Miauuu ..";
 	}
 	
+	public String Ficha() {
+		return this.DatosAnimal() + "Vidas : " + this.getVidas();
+	}
 	
 	public String muere() {
 		this.setVidas(this.getVidas() - 1);
