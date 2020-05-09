@@ -29,8 +29,7 @@ private int NumeroServicios;
 			System.out.println("El vehículo está apagado");
 		}
 		
-	}
-	
+	}	
 	
 	public void Polimorfo() {
 		System.out.println("Este método se ejecuta desde la clase vehículo");
@@ -95,10 +94,4 @@ private int NumeroServicios;
 	public void setNumeroServicios(int numeroServicios) {
 		NumeroServicios = numeroServicios;
 	}
-
-	
-	
-	
-	
-	
 }

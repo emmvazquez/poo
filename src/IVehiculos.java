@@ -38,12 +38,12 @@ public class IVehiculos {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 860, 640);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JTextPane Ficha = new JTextPane();
-		Ficha.setBounds(233, 37, 173, 194);
+		Ficha.setBounds(502, 28, 281, 194);
 		frame.getContentPane().add(Ficha);
 		
 		JButton btnNewButton = new JButton("New button");
