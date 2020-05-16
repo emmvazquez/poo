@@ -15,7 +15,7 @@ public class ArregloCompuesto {
 		Animal a2 = new Animal("Dante","cafe","boxer");
 		Animal a3 = new Animal("Remi","café","cuyo");
 		Animal a4 = new Animal("Negro","negro","sin raza");
-		Animal a5 = new Animal("Oddie","gris","snauzer");
+		Animal a5 = new Animal("Oddie","gris","boxer");
 		
 		
 		Arr1[0] = a1;
@@ -36,7 +36,6 @@ public class ArregloCompuesto {
 			if(Arr1[i].getRaza().equals("boxer")) {
 				total ++;
 			}
-			
 		}
 
 		System.out.println("Raza boxer total :"  + total);
