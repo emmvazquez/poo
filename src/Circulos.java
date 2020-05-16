@@ -1,6 +1,8 @@
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -39,13 +41,18 @@ public class Circulos extends JFrame {
 	}
 	
 	 public void paint(Graphics g){
-         g.drawOval(50, 50, 100, 150); //Dibuja un circulo
-         
+       Graphics2D g2 = (Graphics2D) g;
+      
+       // g2.fillRect(10, 20, 40, 40);
          ArregloFiguras obj = new ArregloFiguras();
          obj.regresaArreglo();
          
          for(int i =0; i < obj.regresaArreglo().length ; i ++) {
-        	 g.drawOval(obj.regresaArreglo()[i].getPosX(), obj.regresaArreglo()[i].getPosY(),obj.regresaArreglo()[i].getLargo(),obj.regresaArreglo()[i].getAncho());
+        	 g2.setColor(Color.BLACK);
+        	 g2.drawOval(obj.regresaArreglo()[i].getPosX(), obj.regresaArreglo()[i].getPosY(),obj.regresaArreglo()[i].getLargo(),obj.regresaArreglo()[i].getAncho());
+        	 g2.setColor(obj.regresaArreglo()[i].getColor());
+        	 g2.fillOval(obj.regresaArreglo()[i].getPosX(), obj.regresaArreglo()[i].getPosY(),obj.regresaArreglo()[i].getLargo(),obj.regresaArreglo()[i].getAncho());
+        	 
          }
     }
 
