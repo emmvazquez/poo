@@ -51,21 +51,27 @@ private int Numero;
 //		
 //		
 //		
+//		
+//		
+//		String nombres[] =  {"Emmanuel", "Abdiel","Ailyn","Clau","Pedro","Fernando"};
+//		int edad[] = {36, 15,9,43};
+//		
+//		
+//		Double totalEdad = 0.0;
+//		for(int i =0; i < nombres.length; i ++) {
+//			System.out.println(nombres[i] + " tiene " + edad[i] + " años");
+//			totalEdad = totalEdad + edad[i];
+//			
+//		}
+//		
+//		System.out.println("La edad acumulada es " + totalEdad);
+//		System.out.println("La promedio de edad " + totalEdad/edad.length);
 		
 		
-		String nombres[] =  {"Emmanuel", "Abdiel","Ailyn","Clau"};;
-		int edad[] = {36, 15,9,43};
+		String primerNombre[] = {"Karla","Gustavo","Ángel","Carolina","Daniela"};
+		String segundoNombre[] = {"Ivette","","","Vianney",""};
 		
-		
-		Double totalEdad = 0.0;
-		for(int i =0; i < nombres.length; i ++) {
-			System.out.println(nombres[i] + " tiene " + edad[i] + " años");
-			totalEdad = totalEdad + edad[i];
-			
-		}
-		
-		System.out.println("La edad acumulada es " + totalEdad);
-		System.out.println("La promedio de edad " + totalEdad/edad.length);
+		System.out.println(primerNombre[4]);
 		
 	}
 	

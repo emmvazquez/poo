@@ -6,10 +6,15 @@ private Boolean estadoVehiculo;
 
 private int NumeroServicios;
 
+
+
+	//constructor vacio
 	public Vehiculo() {
 		// TODO Auto-generated constructor stub
 	}	
 	
+	
+	//constructor parametrizado
 	public Vehiculo(String modelo, int anio, String color) {
 		Modelo = modelo;
 		Anio = anio;

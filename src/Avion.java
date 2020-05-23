@@ -1,4 +1,4 @@
-
+//			 avión hereda Vehiculo
 public class Avion extends Vehiculo{
 private int NumeroTurbinas;
 private int NumeroPasajeros;
@@ -8,7 +8,7 @@ private int NumeroPasajeros;
 	}
 
 	public Avion(String modelo, int anio, String color, int numeroTurbinas, int numeroPasajeros) {
-		super(modelo, anio, color);
+		super(modelo, anio, color);  //se mandan los parametros a la clase padre
 		NumeroTurbinas = numeroTurbinas;
 		NumeroPasajeros = numeroPasajeros;
 	}

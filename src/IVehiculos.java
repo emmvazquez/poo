@@ -49,7 +49,7 @@ public class IVehiculos {
 		JButton btnNewButton = new JButton("New button");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Avion oav1 = new Avion("Boeing",2000, "Blanco", 4, 100 );
+				Avion oav1 = new Avion();
 				Ficha.setText(oav1.ficha());
 			}
 			
