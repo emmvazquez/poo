@@ -68,11 +68,27 @@ private int Numero;
 //		System.out.println("La promedio de edad " + totalEdad/edad.length);
 		
 		
-		String primerNombre[] = {"Karla","Gustavo","Ángel","Carolina","Daniela"};
-		String segundoNombre[] = {"Ivette","","","Vianney",""};
+		String primerNombre[] = {"Karla","Gustavo","David","Carolina","Daniela"};
+		String segundoNombre[] = {"Ivette","Adolfo","Ángel","Vianney","Dulce"};
 		
-		System.out.println(primerNombre[4]);
+		System.out.println(primerNombre[0] +" "+ segundoNombre[4]);
 		
+		Animal tuf = new Animal("Tuf","blanco","boxer");
+		Animal remy = new Animal("Remy","café","cuyo");
+		Animal dante = new Animal("Dante","café","boxer");
+		
+		Animal animalesEmmanuel[] = {tuf, remy, dante};
+		System.out.println(animalesEmmanuel[1].getNombre());
+		
+		//crear un arreglo de objetos de tipo avión con 4 aviones
+		//Avion(String modelo, int anio, String color, int numeroTurbinas, int numeroPasajeros)
+		Avion a1 = new Avion("Boing",2020, "blanco",4,100);
+		Avion a2 = new Avion("Boing",2010, "blanco",4,105);
+		Avion a3 = new Avion("Boing",2015, "blanco",4,120);
+		Avion a4 = new Avion("Boing",2010, "blanco",4,80);
+		
+		Avion arregloAviones[] = {a1,a2,a3,a4};
+		System.out.println(arregloAviones[3].getAnio());
 	}
 	
 	
