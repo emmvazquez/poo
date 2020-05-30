@@ -17,9 +17,18 @@ public class Debug {
 		
 		variable = variable + x;
 		
-		System.out.print(variable);
+		//System.out.print(variable);
 		
+		int arreglo[] = new int[5];
 		
+		int posicion = 0;
+		
+		for(int i=17; i < 33; i = i +2) {	
+			if(posicion < 5) {
+				arreglo[posicion] = i;
+				posicion ++;
+			}
+		}
 		
 	}
 
