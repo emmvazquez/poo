@@ -41,21 +41,23 @@ public class MatrizG extends JFrame {
 	
 	public void paint(Graphics g){
 	       Graphics2D g2 = (Graphics2D) g;	
-	       
+	       Matriz m = new Matriz();
+	      
 	       int x = 0;
 	       int y = 0;
 	       
 	       for(int i=0; i < 4; i++) {  
 	    	   for(int j=0; j < 4; j++) {
 		    	   g2.drawRect(x, y, 100, 100);
+		    	   g2.drawString(String.valueOf(m.getM()[i][j]), x + 50, y + 50);
+		    		
 		    	   x = x + 100;
 	    	   }
 	    	   x =0;
 	    	   y = y + 100;
 	       }
 	       
-	       g2.drawString("53", 100, 100);
-	
+	      
 	}
 
 }

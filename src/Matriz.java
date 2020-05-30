@@ -3,6 +3,14 @@ public class Matriz {
 
 	private int m[][] = new int[4][4];
 		
+	public int[][] getM() {
+		return m;
+	}
+
+	public void setM(int[][] m) {
+		this.m = m;
+	}
+
 	public Matriz() {
 		// TODO Auto-generated constructor stub	
 		m[0][0] = -1;
@@ -23,4 +31,6 @@ public class Matriz {
 		m[3][3] = 1;
 	}
 
+	
+	
 }
