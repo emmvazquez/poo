@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -41,15 +42,18 @@ public class MatrizG extends JFrame {
 	
 	public void paint(Graphics g){
 	       Graphics2D g2 = (Graphics2D) g;	
-	       Matriz m = new Matriz();
-	      
+	       Caracol m = new Caracol();	      
 	       int x = 0;
 	       int y = 0;
 	       
 	       for(int i=0; i < 4; i++) {  
-	    	   for(int j=0; j < 4; j++) {
-		    	   g2.drawRect(x, y, 100, 100);
-		    	   g2.drawString(String.valueOf(m.getM()[i][j]), x + 50, y + 50);
+	    	   for(int j=0; j < 4; j++) {  
+	    		   g2.setColor(m.regresaColor(m.getMatrizP()[i][j]));
+	    		   g2.fillRect(x, y, 100, 100);  
+	    		   g2.setColor(Color.BLUE);
+	    		   g2.drawRect(x, y, 100, 100);	    	 
+	    		   g2.setColor(Color.YELLOW);
+		    	   g2.drawString(String.valueOf(m.getMatrizP()[i][j]), x + 50, y + 50);
 		    		
 		    	   x = x + 100;
 	    	   }
